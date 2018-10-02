@@ -30,7 +30,6 @@ void setup() {
   randomSeed(analogRead(0));
   // Display setup stuff
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
-  display.display();
   display.clearDisplay();
   display.setTextSize(1);
   display.setTextColor(WHITE,BLACK);
@@ -43,7 +42,7 @@ void setup() {
   display.println("3: L > 3 = Death");
   display.println("4: D == 3 = Birth");
   display.display();
-  //delay(10000);
+  delay(10000);
   display.clearDisplay();
   display.display();
   
